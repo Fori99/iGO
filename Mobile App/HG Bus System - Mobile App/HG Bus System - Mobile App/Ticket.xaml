@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HG_Bus_System___Mobile_App.Ticket">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Ticket Details" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40, 10, 40, 10</OnIdiom.Phone>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <StackLayout Orientation="Vertical" Margin="0, 10">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label x:Name="route_label" TextColor="#333333" FontSize="24" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Label x:Name="date_label" TextColor="#333333" FontSize="24" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Label x:Name="time_label" TextColor="#333333" FontSize="24" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,10,0,0">
+                    <Label Text="Name: " TextColor="#333333" FontSize="20" FontFamily="Arial" FontAttributes="Bold"/>
+                    <Label x:Name="name_label" TextColor="#333333" FontSize="20" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,0,0,0">
+                    <Label Text="Seats: " TextColor="#333333" FontSize="20" FontFamily="Arial" FontAttributes="Bold"/>
+                    <Label x:Name="seats_label" TextColor="#333333" FontSize="20" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,0,0,0">
+                    <Label Text="Price: " TextColor="#333333" FontSize="20" FontFamily="Arial" FontAttributes="Bold"/>
+                    <Label x:Name="price_label" TextColor="#333333" FontSize="20" FontFamily="Arial"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Margin="0,10,0,0">
+                    <Label Text="Thank you for choosing our bus booking system for your travel needs. Your ticket purchase has been successfully completed, and we are excited to have you on board with us!"  TextColor="#333333" FontSize="15" FontFamily="Arial" />
+                    <Label Text="To ensure a smooth and hassle-free journey, please take a moment to review your ticket details on this page. We highly recommend taking a screenshot of your ticket as it will be required at the start of your trip."  TextColor="#333333" FontSize="15" FontFamily="Arial"/>
+                    <Label Text="Once again, thank you for choosing iGO. We hope you have a safe and enjoyable journey with us."  TextColor="#333333" FontSize="15" FontFamily="Arial"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

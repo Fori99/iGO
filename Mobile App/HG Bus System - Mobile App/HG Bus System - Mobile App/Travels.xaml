@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HG_Bus_System___Mobile_App.Travels">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Pick a Trip" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40, 10, 40, 10</OnIdiom.Phone>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <StackLayout Padding="20">
+                <Label Text="Choose The Route"
+           TextColor="#333333"
+           FontSize="24"
+           FontFamily="Arial"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+                <Picker x:Name="startCityPicker"
+            ItemsSource="{Binding}"
+            Title="Select Route"
+            TitleColor="#888888"
+            FontSize="18"
+            FontFamily="Arial"
+            Margin="0,20,0,0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand" >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="Name" />
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+            </StackLayout>
+
+
+            <StackLayout Padding="20">
+                <Label Text="Choose The Date"
+           TextColor="#333333"
+           FontSize="24"
+           FontFamily="Arial"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+                <DatePicker x:Name="DatePicker" Format="D" />
+            </StackLayout>
+
+            <Button Text="Display Trips" Clicked="search_travels"  CornerRadius="10"/>
+
+            <ListView x:Name="travelsListView" ItemSelected="OnTravelSelected" Margin="0,20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" >
+
+                                <Frame HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0" Padding="0" BackgroundColor="#2196f3">
+                                    <Label Text="{Binding Id}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                                </Frame>
+                                
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Time" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Time}"  TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Price" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                            <Label Text="{Binding Price}" TextColor="Black"/>
+                                            <Label Text="ALL" TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Seats" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Seats}" TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

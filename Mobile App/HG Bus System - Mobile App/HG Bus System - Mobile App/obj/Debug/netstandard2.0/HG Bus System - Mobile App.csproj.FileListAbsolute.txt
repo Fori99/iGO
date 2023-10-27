@@ -1,0 +1,23 @@
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.csproj.AssemblyReference.cache
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Travels.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.AssemblyInfoInputs.cache
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.AssemblyInfo.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.csproj.CoreCompileInputs.cache
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.dll
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\HG Bus System - Mobile App.pdb
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\bin\Debug\netstandard2.0\HG Bus System - Mobile App.deps.json
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\bin\Debug\netstandard2.0\HG Bus System - Mobile App.dll
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\bin\Debug\netstandard2.0\HG Bus System - Mobile App.pdb
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\ref\HG Bus System - Mobile App.dll
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Create_Account.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Booking_Page.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Driver_Login.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Routes.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Reservations.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\bin\Debug\netstandard2.0\Assets\Images\test.jpeg
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\obj\Debug\netstandard2.0\Ticket.xaml.g.cs
+E:\Projekte\HG Bus System\HG Bus System - Mobile App\HG Bus System - Mobile App\HG Bus System - Mobile App\bin\Debug\netstandard2.0\ref\HG Bus System - Mobile App.dll

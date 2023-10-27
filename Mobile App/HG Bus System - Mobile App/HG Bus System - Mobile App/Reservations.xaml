@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HG_Bus_System___Mobile_App.Reservations">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Reservations" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40, 10, 40, 10</OnIdiom.Phone>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <StackLayout Padding="20">
+                <Label Text="Booked Seats" TextColor="#333333" FontSize="24" FontFamily="Arial" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <ListView x:Name="travelsListView"  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+
+                                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                                    <Frame HeightRequest="30" WidthRequest="30" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0" Padding="0" BackgroundColor="#2196f3"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                                    <StackLayout Orientation="Horizontal" >
+                                        <Label Text="Name:" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Name}" TextColor="Black"  HorizontalOptions="Center"/>
+
+                                        <Label Text="Seat Nr:" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Seat}" TextColor="Black"  HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

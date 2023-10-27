@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HG_Bus_System___Mobile_App.Routes">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Pick a Trip" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40, 10, 40, 10</OnIdiom.Phone>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <StackLayout Padding="20">
+                <Label Text="Your Trips" TextColor="#333333" FontSize="24" FontFamily="Arial" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <ListView x:Name="travelsListView" ItemSelected="OnTravelSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal" Margin="0,0">
+
+                                <Frame HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="0" Padding="0" BackgroundColor="#2196f3">
+                                    <Label Text="{Binding ID}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                                </Frame>
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Date" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Start_Date}"  TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Time" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Start_Time}"  TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Route" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Route}"  TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
